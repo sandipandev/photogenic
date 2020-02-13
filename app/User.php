@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\model\Award;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -41,5 +42,9 @@ class User extends Authenticatable
     function OTP()
     {
         return Cache::get('OTP');
+    }
+    public function awards()
+    {
+        return $this->hasMany(Award::class);
     }
 }

@@ -50,11 +50,11 @@ class UserProfileController extends Controller
     public function store_profile_picture(Request $req)
     {
         $user_id = $this->get_user_id();
-        $user_name = Auth::user()->name;
+        //$user_name = Auth::user()->name;
 
         //Store In Storage Folder
-        $store = $req->file('profile_picture')->storeAs('public/'.$user_name. '/profile_picture',time().$req->profile_picture->getClientOriginalName());
-        $path = $user_name.'/profile_picture/'.time().$req->profile_picture->getClientOriginalName();
+        $store = $req->file('profile_picture')->storeAs('public/'.$user_id. '/profile_picture',time().$req->profile_picture->getClientOriginalName());
+        $path = $user_id.'/profile_picture/'.time().$req->profile_picture->getClientOriginalName();
 
         //Update user_archives Table
         DB::table('user_archives')

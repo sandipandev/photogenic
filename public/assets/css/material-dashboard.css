@@ -17874,7 +17874,7 @@ label {
 
 .card-profile .card-avatar img {
   width: 100%;
-  height: 114px;
+  /* height: 114px; */
 }
 
 .card-profile .card-body+.card-footer {

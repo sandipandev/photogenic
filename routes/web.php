@@ -37,7 +37,9 @@ Route::group(['middleware'=>'OtpAuthentication'], function () {
     Route::post('/purchase_request','PurchaseController@createRequest')->name('purchase_request'); 
     Route::get('/contact_us','ContactUsController@index')->name('contact_us');  
     Route::post('/contact_us_process','ContactUsController@store')->name('contact_us_process'); 
-    Route::get('/grievance','GrievanceController@index')->name('grievance'); 
+    Route::get('/grievance','GrievanceController@index')->name('grievance');
+    Route::post('/award_store','AwardController@storeAward')->name('award_store');
+    Route::post('/delete_award','AwardController@deleteAward')->name('delete_award'); 
 });
 Route::post('/Verify', 'VerifyController@verify')->name('verify');
 Route::get('verifyEmailFirst','Auth\RegisterController@verifyEmailFirst')->name('verifyEmailFirst');
