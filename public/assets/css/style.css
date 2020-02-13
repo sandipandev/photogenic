@@ -1,0 +1,152 @@
+body {
+    color: #3C4858;
+    font-weight: 300;
+}
+.centered {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 4px;
+  background: #20294085;
+  border-radius: 10px;
+  font-size: 10px
+}
+.gallery img {
+  
+  border-radius: 15px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+  margin: 5px;
+}
+.profile{
+background: #fff8f8;
+padding: 5px;
+margin:5px;
+}
+.profile-header img{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  width: 50%;
+  height: 175px;
+}
+.profile-body{
+  text-decoration: none;
+}
+.profile-footer{
+text-decoration: none;
+}
+.profile-footer a{
+	width: 100%;
+}
+.custom-nav{
+  width: 99%;
+  padding: 5px;
+}
+.coustom-nav-a {
+  font-size: 28px;
+  padding: 10px;
+  color:#9c27b0;  
+}
+.coustom-nav-a:hover{
+  text-decoration: none;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #9c27b0 0%, #be6dcc 51%, #9c27b0 100%);color:#eee;min-width:100px;}
+.btn-grad:hover { background-position: right;color:#fff; }
+
+footer{
+  background: #9c27b0;
+}
+footer h1{
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.registration-header h1{
+  color: #9c27b0;
+  font-size: 24px;
+}
+
+.facebook{
+  padding: 10px;
+  letter-spacing: .1em;
+  width: 100%;
+  text-align: left;
+}
+.google{
+  padding: 10px;
+  letter-spacing: .1em;
+  width: 100%;
+  text-align: left;
+}
+
+.google i, .facebook i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.social-signup{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+    html, body {
+        background-color: #fff;
+        color: #636b6f;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .full-height {
+        height: 100vh;
+    }
+
+    .flex-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .position-ref {
+        position: relative;
+    }
+
+    .top-right {
+        position: absolute;
+        right: 10px;
+        top: 18px;
+    }
+
+    .content {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 84px;
+    }
+
+    .links > a {
+        color: #636b6f;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .m-b-md {
+        margin-bottom: 30px;
+    }
+
+    .logo img{
+      width: 150px;;
+    }
