@@ -43,13 +43,17 @@ class AwardController extends Controller
     
     public function storeAward(Request $request)
     {
+        $this->validate($request,[
+            'award_title' => 'required',
+            'award_description' => 'required|max:240',
+        ]);
         $user_information = $this->user_information();
         $user_id = $user_information->user_id;
         $user_details = $user_information->user_details;
         $awards = $user_information->awards;
         $plan = $user_information->plan;
         if (count($awards)==$plan->no_of_picture_in_award){
-            return redirect('/award')->with('message','You Can not Upload more than five images');
+            return redirect('/award')->with('message','You Can not Upload more images');
         }
         $user_id = $this->get_user_id();
         //$user_name = Auth::user()->name;

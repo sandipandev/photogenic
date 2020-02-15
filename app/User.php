@@ -3,6 +3,7 @@
 namespace App;
 
 use App\model\Award;
+use App\model\Archive;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -46,5 +47,9 @@ class User extends Authenticatable
     public function awards()
     {
         return $this->hasMany(Award::class);
+    }
+    public function archives()
+    {
+        return $this->hasMany(Archive::class);
     }
 }

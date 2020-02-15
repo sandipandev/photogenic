@@ -172,3 +172,24 @@ footer h1{
         background: transparent;
         border: none;
       }
+      .archive-image{
+      position: relative;
+      text-align: center;
+      color: white;
+      }
+      .top-right-archive {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color:black;
+        cursor: pointer;
+        transition:.3s ease-in-out;
+      }
+      .top-right-archive:hover{
+        color: #44545c;
+        transition:.3s ease-in-out;
+      }
+      .archive-delete-button{
+        background: transparent;
+        border: none;
+      }

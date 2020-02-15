@@ -27,6 +27,7 @@ Route::group(['middleware'=>'OtpAuthentication'], function () {
     Route::post('/update_user_profile', 'UserProfileController@update_user_profile')->name('update_user_profile');
     Route::get('/archive', 'ArchiveController@index')->name('archive');
     Route::post('/store_archive_picture','ArchiveController@store_archive_picture')->name('store_archive_picture');
+    Route::post('/delete_archive','ArchiveController@deleteArchive')->name('delete_archive');
     Route::get('/award', 'AwardController@index')->name('award');
     Route::get('/biodata', 'BiodataController@index')->name('biodata'); 
     Route::post('/biodata_store','BiodataController@store')->name('biodata_store');
